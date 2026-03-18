@@ -1,29 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <!-- Instant redirect – 0 second delay -->
-    <meta http-equiv="refresh" content="0; url=https://limewire.com/d/1ru6E#qMBtsnWJMy" />
-    <title>Redirect</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 0;
-            width: 0;
-            overflow: hidden;
-            display: none;          /* completely hide everything */
-            visibility: hidden;     /* extra layer of hiding */
-        }
-    </style>
+  <meta http-equiv="refresh" content="0;url=https://limewire.com/d/1ru6E#qMBtsnWJMy">
+  <script>location.replace("https://limewire.com/d/1ru6E#qMBtsnWJMy");</script>
 </head>
-<body style="display:none;">
-    <!-- No content at all – no text, no loader, nothing visible -->
-    <script>
-        // Immediate redirect (fallback if meta refresh blocked)
-        (function(){
-            location.replace("https://limewire.com/d/1ru6E#qMBtsnWJMy");
-        })();
-    </script>
-</body>
+<body></body>
 </html>
